@@ -20,7 +20,7 @@ class Game {
 
         this.playerImg = loadImage("/Infinite_Runner_NOVA/Images/Player.png")
     
-        this.pointsImg = loadImage("/Infinite_Runner_NOVA/Images/Download.png")
+        this.pointsImg = loadImage("/Infinite_Runner_NOVA/Images/Weiß Vogel.png")
     }
 
     setupGame (){
