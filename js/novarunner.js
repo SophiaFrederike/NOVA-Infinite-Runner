@@ -7,6 +7,8 @@ constructor(){
     this.gravity = 0.4;
     this.velocity = 0;
 
+    this.health = 50;
+
     this.image;
 }
 
@@ -31,8 +33,17 @@ drawPlayer() {
       this.velocity = -10;
     //}
   }
-// receiveDamage(){
+// this is supposted to be the counter for the catched Points of the player
+  receiveHealth(pointmedicine){
+    this.health += pointmedicine;
+    console.log(`received ${pointmedicine} of health`)
+  }
 
-//}
+  //this is supposed to be the counter for the catched threats
+  /*
+receiveDamage(){
+  this.health -=damage;
 
+}
+*/
 }

@@ -22,6 +22,8 @@ class Game {
     
         this.pointsImg = [loadImage("/Infinite_Runner_NOVA/Images/Weiß Vogel.png"),loadImage("/Infinite_Runner_NOVA/Images/Projekt.png"),
              loadImage("/Infinite_Runner_NOVA/Images/Studiguide.png")];
+
+        this.threatImg = loadImage("/Infinite_Runner_NOVA/Images/StudiIcon.png")
     }
 
     setupGame (){

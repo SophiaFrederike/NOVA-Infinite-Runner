@@ -8,7 +8,7 @@ class Background {
       this.x--;
      
       this.images.forEach((picture) => {
-          console.log(picture);
+      
         picture.x -= picture.speed;
         image(picture.src, picture.x, 0, width, height);
         image(picture.src, picture.x - width, 0, width, height);

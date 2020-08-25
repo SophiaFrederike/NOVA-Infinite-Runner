@@ -21,13 +21,15 @@ What I still need:
     - I need something that represents the health of my Player (check Viking for that)
     - I need something that adds up points to the health when I collide with the job
     - I need something that removes points from the health when I coolide with it (with the threat)
- - I need different kind of points to show the different kinds of possibilities (Job, Praktika, Stipendium, Engagement, Thesis)
 
  - (would like to add extrapoints like beer (NightlifeGuide) and Goldenes NOVA Logo (Karriere Navi, and StudiIcon (representing Studiengang))
     - They have to be added up to the health of the Player too
  - I want a saying when Extrapoints are catched:  "Nice, dass war der Nightlife Guide" and "Super, du bist auf das Karriere Navi gekommen", "Gib nur deinen Studiengang ein"
  - create a gif out of the player so that it looks better 
+ - add better pictures for the coins
 
+ DONE: 
+ - I need different kind of points to show the different kinds of possibilities (Job, Praktika, Stipendium, Engagement, Thesis)
 
 
 Higher Level Goal: 

@@ -5,6 +5,7 @@ class Points {
       this.x = width;
       this.y = (Math.random() * height) / 1.5;
       this.image = img;
+      this.medicine = 1;
     }
   
  
@@ -13,16 +14,19 @@ class Points {
       let pointY = this.y + this.height / 2;
       let playerX = playerInfo.x + playerInfo.width / 2;
       let playerY = playerInfo.y + playerInfo.height / 2;
-      console.log(pointX, pointY, playerX, playerY);
+     
   
       if (dist(pointX, pointY, playerX, playerY) < 50) {
+        console.log(playerInfo)
+        playerInfo.health ++
+        console.log(playerInfo.health)
         return true;
       }
     }
   
     drawPoints() {
       this.x -= 5;
-      console.log("working?");
+    
         image(this.image, this.x, this.y, this.width, this.height);
     }
 }
