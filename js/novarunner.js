@@ -2,8 +2,8 @@ class Player{
 constructor(){
     this.height = 80;
     this.width = 80;
-    this.x = 0;
-    this.y = height - this.height;
+    this.x = 10;
+    this.y = 300;
     this.gravity = 0.4;
     this.velocity = 0;
 
@@ -31,5 +31,8 @@ drawPlayer() {
       this.velocity = -10;
     //}
   }
+// receiveDamage(){
+
+//}
 
 }

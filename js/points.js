@@ -1,7 +1,7 @@
 class Points {
     constructor(img) {
-      this.height = 50;
-      this.width = 50;
+      this.height = 80;
+      this.width = 80;
       this.x = width;
       this.y = (Math.random() * height) / 1.5;
       this.image = img;
@@ -21,8 +21,8 @@ class Points {
     }
   
     drawPoints() {
-      this.x -= 4;
+      this.x -= 5;
       console.log("working?");
-      image(this.image, this.x, this.y, this.width, this.height);
+        image(this.image, this.x, this.y, this.width, this.height);
     }
-  }
+}

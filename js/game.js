@@ -18,9 +18,10 @@ class Game {
                 }
         ];
 
-        this.playerImg = loadImage("/Infinite_Runner_NOVA/Images/Player.png")
+        this.playerImg = loadImage("/Infinite_Runner_NOVA/Images/Player.png");
     
-        this.pointsImg = loadImage("/Infinite_Runner_NOVA/Images/Weiß Vogel.png")
+        this.pointsImg = [loadImage("/Infinite_Runner_NOVA/Images/Weiß Vogel.png"),loadImage("/Infinite_Runner_NOVA/Images/Projekt.png"),
+             loadImage("/Infinite_Runner_NOVA/Images/Studiguide.png")];
     }
 
     setupGame (){
@@ -31,15 +32,15 @@ class Game {
         this.player.image = this.playerImg;
     }
 
+
     drawGame(){
         clear(); 
         this.background.drawBackground();
         this.player.drawPlayer();
 
         if (frameCount % 60 === 0) {
-            this.points.push(new Points(this.pointsImg));
+            this.points.push(new Points(this.pointsImg[Math.floor(Math.random() * this.pointsImg.length)]))
           }
-
         this.points.forEach((point) => {
             point.drawPoints();
           });

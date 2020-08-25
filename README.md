@@ -8,6 +8,32 @@ Therefor I need:
 5. a game class where images are loaded, the game is drawn and setup
 6. a main file, where the game is initiated ( setup (canvas), preload,)
 
-Player
--where in the canva is the player inititated?
-- 
+Recap Day 1: 
+
+I have an infinite Runners Game.
+I have a Player.
+I have the things that I want to collect - 'Jobs'
+
+
+What I still need: 
+ - I need the threats.
+ - I need a counter for the points. This should also show up!
+    - I need something that represents the health of my Player (check Viking for that)
+    - I need something that adds up points to the health when I collide with the job
+    - I need something that removes points from the health when I coolide with it (with the threat)
+ - I need different kind of points to show the different kinds of possibilities (Job, Praktika, Stipendium, Engagement, Thesis)
+
+ - (would like to add extrapoints like beer (NightlifeGuide) and Goldenes NOVA Logo (Karriere Navi, and StudiIcon (representing Studiengang))
+    - They have to be added up to the health of the Player too
+ - I want a saying when Extrapoints are catched:  "Nice, dass war der Nightlife Guide" and "Super, du bist auf das Karriere Navi gekommen", "Gib nur deinen Studiengang ein"
+ - create a gif out of the player so that it looks better 
+
+
+
+Higher Level Goal: 
+ Was soll ein User nach dem Spiel verstehen?
+ 1. NOVA bietet ein Karriere Navi, in dem alle möglichen Arten von Möglichkeiten dargeboten werden
+ 2. Es gibt den Nightlife Guide
+ 3. Man muss nur den Studiengang eingeben 
+ 4. Es ist für alle
+
