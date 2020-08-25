@@ -5,7 +5,7 @@ class Points {
       this.x = width;
       this.y = (Math.random() * height) / 1.5;
       this.image = img;
-      this.medicine = 10;
+      this.medicine = 5;
     }
   
  
@@ -25,7 +25,7 @@ class Points {
     }
   
     drawPoints() {
-      this.x -= 5;
+      this.x -= 10;
     
         image(this.image, this.x, this.y, this.width, this.height);
     }

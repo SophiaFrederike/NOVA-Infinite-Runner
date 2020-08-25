@@ -24,7 +24,7 @@ class Game {
         this.pointsImg = [loadImage("/Infinite_Runner_NOVA/Images/Weiß Vogel.png"),loadImage("/Infinite_Runner_NOVA/Images/Projekt.png"),
              loadImage("/Infinite_Runner_NOVA/Images/Studiguide.png")];
 
-        this.threatImg = loadImage("/Infinite_Runner_NOVA/Images/StudiIcon.png");
+        this.threatImg = loadImage("/Infinite_Runner_NOVA/Images/453-4532423_icon-netflix-logo-png-transparent-png.png");
     }
 
     setupGame (){
@@ -57,9 +57,9 @@ class Game {
               return true;
             }
           });
-          
+
 // this draws the threats
-          if (frameCount % 80 === 0) {
+          if (frameCount % 50 === 0) {
             this.threats.push(new Threat(this.threatImg));
           }
         this.threats.forEach((threat) => {

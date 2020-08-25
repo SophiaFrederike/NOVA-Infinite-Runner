@@ -8,7 +8,7 @@ const game = new Game();
   }
 
   function setup() {
-    createCanvas(1000, 600);
+    createCanvas(1000, 700);
     game.setupGame();
   }
 

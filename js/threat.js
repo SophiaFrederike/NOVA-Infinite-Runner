@@ -27,7 +27,7 @@ class Threat {
     }
   
     drawThreats() {
-      this.x -= 7;
+      this.x -= 15;
         image(this.image, this.x, this.y, this.width, this.height);
     }
 }
