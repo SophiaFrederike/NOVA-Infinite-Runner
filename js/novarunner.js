@@ -36,14 +36,13 @@ drawPlayer() {
 // this is supposted to be the counter for the catched Points of the player
   receiveHealth(pointmedicine){
     this.health += pointmedicine;
-    console.log(`received ${pointmedicine} of health`)
   }
 
   //this is supposed to be the counter for the catched threats
-  /*
-receiveDamage(){
-  this.health -=damage;
 
+receiveDamage(damage){
+  this.health -=damage;
+ 
 }
-*/
 }
+

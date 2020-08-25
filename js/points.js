@@ -5,7 +5,7 @@ class Points {
       this.x = width;
       this.y = (Math.random() * height) / 1.5;
       this.image = img;
-      this.medicine = 1;
+      this.medicine = 10;
     }
   
  
@@ -17,8 +17,8 @@ class Points {
      
   
       if (dist(pointX, pointY, playerX, playerY) < 50) {
-        console.log(playerInfo)
-        playerInfo.health ++
+        playerInfo.health +=this.medicine;
+        document.querySelector(".progressbutton").value = playerInfo.health;
         console.log(playerInfo.health)
         return true;
       }

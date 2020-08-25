@@ -16,20 +16,28 @@ I have the things that I want to collect - 'Jobs'
 
 
 What I still need: 
- - I need the threats.
- - I need a counter for the points. This should also show up!
-    - I need something that represents the health of my Player (check Viking for that)
-    - I need something that adds up points to the health when I collide with the job
-    - I need something that removes points from the health when I coolide with it (with the threat)
+- I need to define the range of the health from 0 to 100
+- I need to define the Game Over (0 points or less)
+- I need to define the Win (100 points or more)
+- I need to have a button, that allows a player to play again
+- I want a saying when Extrapoints are catched:  "Nice, dass war der Nightlife Guide" and "Super, du bist auf das Karriere Navi gekommen", "Gib nur deinen Studiengang ein"
+  
 
+
+Bonus: 
  - (would like to add extrapoints like beer (NightlifeGuide) and Goldenes NOVA Logo (Karriere Navi, and StudiIcon (representing Studiengang))
     - They have to be added up to the health of the Player too
- - I want a saying when Extrapoints are catched:  "Nice, dass war der Nightlife Guide" and "Super, du bist auf das Karriere Navi gekommen", "Gib nur deinen Studiengang ein"
  - create a gif out of the player so that it looks better 
  - add better pictures for the coins
 
  DONE: 
  - I need different kind of points to show the different kinds of possibilities (Job, Praktika, Stipendium, Engagement, Thesis)
+  - I need the threats.
+   - I need a counter for the points.
+    - I need something that represents the health of my Player (check Viking for that)
+    - I need something that adds up points to the health when I collide with the job
+    - I need something that removes points from the health when I coolide with it (with the threat)
+ - I need a counter for the points. --> This should also show up!
 
 
 Higher Level Goal: 
