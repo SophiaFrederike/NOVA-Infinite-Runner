@@ -10,8 +10,8 @@ class Game {
 
     preloadGame(){
       //tried this for the gameover
-      this.wonImg = loadImage("/Infinite_Runner_NOVA/Images/gewonnen.png");
-        this.gameoverImg = loadImage("/Infinite_Runner_NOVA/Images/verloren.png");
+      this.wonImg = loadImage("/Infinite_Runner_NOVA/Images/Win.png");
+        this.gameoverImg = loadImage("/Infinite_Runner_NOVA/Images/Loose.png");
         this.backgroundImg = [
             {
             src: loadImage("/Infinite_Runner_NOVA/Images/Background.png"),
