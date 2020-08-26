@@ -5,35 +5,42 @@ body {
         align-items: center;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
-        background-color: #8bd6c3;
+        background-color: #2b2b2b;
       }
 
 h1 {
-  font-size: 60px;
-    padding-top: 10px;
+  font-size: 25px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
-    color: #2b2b2b;
+    color: #ebebeb;
+}
+p {
+  font-size: 10px;
+  color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 span {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 progress[value]::-webkit-progress-bar {
   background-color: #2b2b2b;
   border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 2px 5px rgba(124, 189, 173, .40) inset;
 }
 
 progress[value]::-webkit-progress-value {
   background-image:
 	   -webkit-linear-gradient(-45deg, 
 	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	                           rgba(0,0, 0, .1) 20%, transparent 20%),
 	   -webkit-linear-gradient(top, 
 	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #09c, #f44);
+	                           rgba(0, 0, 0, .05)),
+	   -webkit-linear-gradient(left, #7cbdad, #add9c2);
 
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -52,11 +59,10 @@ progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
    appearance: none;
-margin-top: 40px;
-  width: 400px;
-  height: 70px;
+margin-top: 0px;
+margin-bottom: 20px;
+  width: 100px;
+  height: 25px;
 }
 
-
-/*this doesn't work yet*/
 

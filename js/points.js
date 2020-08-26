@@ -1,11 +1,11 @@
 class Points {
     constructor(img) {
-      this.height = 80;
-      this.width = 80;
+      this.height = 40;
+      this.width = 40;
       this.x = width;
       this.y = (Math.random() * height) / 1.5;
       this.image = img;
-      this.medicine = 100;
+      this.medicine = 5;
     }
   
  

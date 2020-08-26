@@ -8,9 +8,8 @@ const game = new Game();
   }
 
   function setup() {
-    createCanvas(1000, 700);
+    createCanvas(600, 400);
     game.setupGame();
-    // game.checkHealthStatus();
     
   }
 
@@ -31,18 +30,3 @@ function keyPressed() {
   }
   
 }
-
-
-//Restart function
-// function reload (){
-
-// }
-//window.location.reload();
-
-
-//Button to restart
-// window.addEventListener('load', () =>{
-//   const restartBtn = document.getElementsByClassName("restart")
-//   restartBtn.addEventListener('click',window.location.reload());
-//   console.log('I have been clicked')
-// })

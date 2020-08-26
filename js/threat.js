@@ -1,7 +1,7 @@
 class Threat {
     constructor(img) {
-      this.height = 80;
-      this.width = 80;
+      this.height = 40;
+      this.width = 40;
       this.x = width;
       this.y = (Math.random() * height) / 1.5;
       this.image = img;
@@ -29,7 +29,7 @@ class Threat {
     }
   
     drawThreats() {
-      this.x -= 15;
+      this.x -= 10;
         image(this.image, this.x, this.y, this.width, this.height);
     }
 }
