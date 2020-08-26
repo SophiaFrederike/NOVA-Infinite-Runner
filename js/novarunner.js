@@ -12,7 +12,11 @@ constructor(){
     this.image;
 }
 
+
 drawPlayer() {
+if (this.health <= 0) {
+  frameRate(0)
+}
 
     this.velocity += this.gravity;
     this.y += this.velocity;
@@ -44,5 +48,6 @@ receiveDamage(damage){
   this.health -=damage;
  
 }
+
 }
 

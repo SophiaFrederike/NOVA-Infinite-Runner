@@ -15,6 +15,15 @@ h1 {
     justify-content: center;
     color: #2b2b2b;
 }
+span {
+  margin-left: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #2b2b2b;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
 
 progress[value]::-webkit-progress-value {
   background-image:
@@ -24,11 +33,20 @@ progress[value]::-webkit-progress-value {
 	   -webkit-linear-gradient(top, 
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left,#2b2b2b,#298284);
+	   -webkit-linear-gradient(left, #09c, #f44);
 
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
+
+@-webkit-keyframes animate-stripes {
+  100% { background-position: -100px 0px; }
+}
+
+@keyframes animate-stripes {
+  100% { background-position: -100px 0px; }
+}
+
 
 progress[value] {
   /* Reset the default appearance */
@@ -41,19 +59,4 @@ margin-top: 40px;
 
 
 /*this doesn't work yet*/
-progress[value]::-webkit-progress-value::before {
-  content: '80%';
-  position: absolute;
-  right: 0;
-  top: -125%;
-}
-progress[value]::-webkit-progress-value::after {
-  content: '';
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  border-radius: 100%;
-  right: 7px;
-  top: 7px;
-  background-color: white;
-}
+

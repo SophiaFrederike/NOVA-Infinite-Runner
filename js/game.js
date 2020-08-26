@@ -2,9 +2,15 @@ class Game {
     constructor(){
         this.points = [];
         this.threats =[];
+    
+     
+        // what to equal this.healthStatus to? 
+        
     }
 
     preloadGame(){
+      //tried this for the gameover
+        this.gameoverImg = loadImage("/Infinite_Runner_NOVA/Images/Game_Over.png");
         this.backgroundImg = [
             {
             src: loadImage("/Infinite_Runner_NOVA/Images/Background.png"),
@@ -35,12 +41,27 @@ class Game {
         this.player.image = this.playerImg;
     }
 
+   /* //tried this for the gameover
+    checkHealthStatus(){
+      if (this.player.health <= 0 ){
+        this.background.images = this.gameoverImg;
+
+      }
+    }
+    */
+    
 
     drawGame(){
         clear(); 
         this.background.drawBackground();
         this.player.drawPlayer();
 
+        
+
+
+
+//this condition checks, if the game is still running
+//if (this.healthStatus >0){
 
 // this draws the points
         if (frameCount % 60 === 0) {
@@ -74,7 +95,13 @@ class Game {
             }
           });
 
+          if (this.player.health <= 0) {
+            console.log("working?");
+            image(this.gameoverImg, 0,0,1000, 700)
+          }
+
+        }
 
         
-    }
-}
+    //}
+  }

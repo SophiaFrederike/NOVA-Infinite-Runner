@@ -47,3 +47,6 @@ Higher Level Goal:
  3. Man muss nur den Studiengang eingeben 
  4. Es ist für alle
 
+Game over
+text() MEthod aus P5
+keyPressed() muss zu Main dazu, dass man das drücken kann, wenn man wieder anfangen will bzw wenn man anfangen will 

@@ -21,6 +21,8 @@ class Threat {
         playerInfo.health -=this.damage;
         document.querySelector(".progressbutton").value = playerInfo.health;
         console.log(playerInfo.health)
+        const healthCounter = document.querySelector('#score span')
+        healthCounter.innerText = playerInfo.health
         return true;
       }
 
