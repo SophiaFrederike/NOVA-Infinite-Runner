@@ -14,9 +14,10 @@ constructor(){
 
 
 drawPlayer() {
-if (this.health <= 0) {
+if (this.health <= 0 || this.health >=200) {
   frameRate(0)
 }
+
 
     this.velocity += this.gravity;
     this.y += this.velocity;

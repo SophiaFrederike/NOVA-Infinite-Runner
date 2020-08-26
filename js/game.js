@@ -4,13 +4,14 @@ class Game {
         this.threats =[];
     
      
-        // what to equal this.healthStatus to? 
+        // what to equal this.healthStatus to?  com: I don't do it like this anymore 
         
     }
 
     preloadGame(){
       //tried this for the gameover
-        this.gameoverImg = loadImage("/Infinite_Runner_NOVA/Images/Game_Over.png");
+      this.wonImg = loadImage("/Infinite_Runner_NOVA/Images/Gewonnen.png");
+        this.gameoverImg = loadImage("/Infinite_Runner_NOVA/Images/Verloren.png");
         this.backgroundImg = [
             {
             src: loadImage("/Infinite_Runner_NOVA/Images/Background.png"),
@@ -56,10 +57,6 @@ class Game {
         this.background.drawBackground();
         this.player.drawPlayer();
 
-        
-
-
-
 //this condition checks, if the game is still running
 //if (this.healthStatus >0){
 
@@ -100,8 +97,11 @@ class Game {
             image(this.gameoverImg, 0,0,1000, 700)
           }
 
+          if (this.player.health >= 200) {
+            console.log("working?");
+            image(this.wonImg, 0,0,1000, 700)
+          }
+
         }
 
-        
-    //}
   }

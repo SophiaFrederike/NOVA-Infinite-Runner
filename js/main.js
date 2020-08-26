@@ -21,14 +21,28 @@ const game = new Game();
 
 
 function keyPressed() {
-  if (player.health <=0){
+  
   if (keyCode === 32) {
+  
     game.player.jump();
+    } 
+  if ((keyCode === 13 && game.player.health <=0)||(keyCode === 13 && game.player.health >=200) ){
+    window.location.reload()
   }
-} else if (player.health>0){
-  if (keyCode ===32){
-    game.preloadGame();
-  }
-}
+  
 }
 
+
+//Restart function
+// function reload (){
+
+// }
+//window.location.reload();
+
+
+//Button to restart
+// window.addEventListener('load', () =>{
+//   const restartBtn = document.getElementsByClassName("restart")
+//   restartBtn.addEventListener('click',window.location.reload());
+//   console.log('I have been clicked')
+// })
