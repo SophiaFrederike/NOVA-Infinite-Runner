@@ -3,6 +3,7 @@ class Game {
         this.points = [];
         this.threats =[];
         this.extrapoints=[];
+        this.pointtext=[];
     
      
         // what to equal this.healthStatus to?  com: I don't do it like this anymore 

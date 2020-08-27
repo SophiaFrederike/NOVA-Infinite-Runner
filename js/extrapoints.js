@@ -17,9 +17,10 @@ class ExtraPoints {
      
   
       if (dist(extrapointX, extrapointY, playerX, playerY) < 50) {
-        playerInfo.health +=this.extramedicine;
+        game.pointtext.push(new PointText(this.x, this.y, this.extramedicine))
+        console.log("here", game.pointtext);
+        playerInfo.health += this.extramedicine;
         document.querySelector(".progressbutton").value = playerInfo.health;
-        console.log(playerInfo.health)
         const healthCounter = document.querySelector('#score span')
         healthCounter.innerText = playerInfo.health
         return true;
@@ -30,5 +31,6 @@ class ExtraPoints {
       this.x -= 10;
     
         image(this.image, this.x, this.y, this.width, this.height);
+        game.pointtext.forEach(point => point.drawPointText())
     }
 }
