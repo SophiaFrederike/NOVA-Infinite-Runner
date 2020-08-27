@@ -10,28 +10,28 @@ class Game {
 
     preloadGame(){
       //tried this for the gameover
-      this.wonImg = loadImage("/Infinite_Runner_NOVA/Images/Win.png");
-        this.gameoverImg = loadImage("/Infinite_Runner_NOVA/Images/Loose.png");
+      this.wonImg = loadImage("/Images/Win.png");
+        this.gameoverImg = loadImage("/Images/Loose.png");
         this.backgroundImg = [
             {
-            src: loadImage("/Infinite_Runner_NOVA/Images/Background.png"),
+            src: loadImage("/Images/Background.png"),
             x:0,
             speed:0,
             },
 
             {
-            src: loadImage("/Infinite_Runner_NOVA/Images/Background.png"),
+            src: loadImage("/Images/Background.png"),
             x:0,
             speed:0,
                 }
         ];
 
-        this.playerImg = loadImage("/Infinite_Runner_NOVA/Images/Player.png");
+        this.playerImg = loadImage("/Images/Player.png");
     
-        this.pointsImg = [loadImage("/Infinite_Runner_NOVA/Images/Weiß Vogel.png"),
-             loadImage("/Infinite_Runner_NOVA/Images/LAMPE.png")];
+        this.pointsImg = [loadImage("/Images/LAMPE.png"),
+             loadImage("/Images/Weiß Vogel.png")];
 
-        this.threatImg = loadImage("/Infinite_Runner_NOVA/Images/Threat.png");
+        this.threatImg = loadImage("/Images/Threat.png");
     }
 
     setupGame (){
