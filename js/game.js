@@ -2,6 +2,7 @@ class Game {
     constructor(){
         this.points = [];
         this.threats =[];
+        this.extrapoints=[];
     
      
         // what to equal this.healthStatus to?  com: I don't do it like this anymore 
@@ -10,28 +11,29 @@ class Game {
 
     preloadGame(){
       //tried this for the gameover
-      this.wonImg = loadImage("/Images/Win.png");
-        this.gameoverImg = loadImage("/Images/Loose.png");
+      this.wonImg = loadImage("/Images/win.png");
+        this.gameoverImg = loadImage("/Images/loose.png");
         this.backgroundImg = [
             {
-            src: loadImage("/Images/Background.png"),
+            src: loadImage("/Images/background.png"),
             x:0,
             speed:0,
             },
 
             {
-            src: loadImage("/Images/Background.png"),
+            src: loadImage("/Images/background.png"),
             x:0,
             speed:0,
                 }
         ];
 
-        this.playerImg = loadImage("/Images/Player.png");
+        this.playerImg = loadImage("/Images/player.png");
     
-        this.pointsImg = [loadImage("/Images/LAMPE.png"),
-             loadImage("/Images/Weiß Vogel.png")];
+        this.pointsImg = [loadImage("/Images/lampe.png"),
+             loadImage("/Images/weisservogel.png")];
 
-        this.threatImg = loadImage("/Images/Threat.png");
+        this.threatImg = loadImage("/Images/threat.png");
+        this.extrapointsImg = loadImage("/Images/extrapoint.png")
     }
 
     setupGame (){
@@ -91,7 +93,24 @@ class Game {
               return true;
             }
           });
+// this draws the extrapoints
+if (frameCount % 90 === 0) {
+  this.extrapoints.push(new ExtraPoints(this.extrapointsImg));
+}
+this.extrapoints.forEach((extrapoint) => {
+  extrapoint.drawExtraPoints();
+});
 
+this.extrapoints = this.extrapoints.filter((extrapoint) => {
+  if (extrapoint.collision(this.player)) {
+    return false;
+  } else {
+    return true;
+  }
+});
+
+
+      // win and loose screen
           if (this.player.health <= 0) {
             console.log("working?");
             image(this.gameoverImg, 0,0,600, 400)
