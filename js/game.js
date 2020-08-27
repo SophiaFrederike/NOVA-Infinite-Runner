@@ -11,29 +11,29 @@ class Game {
 
     preloadGame(){
       //tried this for the gameover
-      this.wonImg = loadImage("../win.png");
-        this.gameoverImg = loadImage("../loose.png");
+      this.wonImg = loadImage("Images/win.png");
+        this.gameoverImg = loadImage("Images/loose.png");
         this.backgroundImg = [
             {
-            src: loadImage("../background.png"),
+            src: loadImage("Images/background.png"),
             x:0,
             speed:0,
             },
 
             {
-            src: loadImage("../background.png"),
+            src: loadImage("Images/background.png"),
             x:0,
             speed:0,
                 }
         ];
 
-        this.playerImg = loadImage("../player.png");
+        this.playerImg = loadImage("Images/player.png");
     
-        this.pointsImg = [loadImage("../lampe.png"),
-             loadImage("../weisservogel.png")];
+        this.pointsImg = [loadImage("Images/lampe.png"),
+             loadImage("Images/weisservogel.png")];
 
-        this.threatImg = loadImage("../threat.png");
-        this.extrapointsImg = loadImage("../extrapoint.png")
+        this.threatImg = loadImage("Images/threat.png");
+        this.extrapointsImg = loadImage("Images/extrapoint.png")
     }
 
     setupGame (){
