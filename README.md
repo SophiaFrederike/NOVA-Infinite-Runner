@@ -17,7 +17,6 @@ I have the things that I want to collect - 'Jobs'
 
 What I still need: 
 - Sounds while playing
-- make the github url work
 - I want a saying when Extrapoints are catched:  "Nice, dass war der Nightlife Guide" and "Super, du bist auf das Karriere Navi gekommen", "Gib nur deinen Studiengang ein"
   
 
@@ -43,6 +42,7 @@ Bonus:
 - I need to define the Win (100 points or more)
 - I need to have a button, that allows a player to play again
  - add better pictures for the coins
+ - make the github url work
   
 
 Higher Level Goal: 
