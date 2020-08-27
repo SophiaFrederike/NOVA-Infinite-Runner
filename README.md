@@ -27,6 +27,7 @@ Bonus:
     - They have to be added up to the health of the Player too
  - create a gif out of the player so that it looks better 
  - I could add more point images
+ - make game work on the phone 
 
 
  DONE: 
@@ -42,7 +43,7 @@ Bonus:
 - I need to define the Win (100 points or more)
 - I need to have a button, that allows a player to play again
  - add better pictures for the coins
- 
+  
 
 Higher Level Goal: 
  Was soll ein User nach dem Spiel verstehen?
